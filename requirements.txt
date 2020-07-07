@@ -1,6 +1,9 @@
 coffeehousemods_tokenizer
 coffeehousemods_stopwords
 nltk
+pyrsistent
+cld2-cffi
+numpy
 requests
 bs4
 wikipedia

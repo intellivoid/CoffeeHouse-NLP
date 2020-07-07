@@ -8,7 +8,7 @@ class SummarizerException(Exception):
         self.error = error
 
     def __unicode__(self):
-        return "An unknown error occured: \"{0}\". Please report it on GitHub!".format(self.error)
+        return "An unknown error occured: \"{0}\".".format(self.error)
 
     if sys.version_info > (3, 0):
         def __str__(self):

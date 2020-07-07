@@ -9,9 +9,7 @@ commonwords = ["the", "a", "an", "is", "are", "were", "."]
 questionwords = ["who", "what", "where", "when", "why", "how", "whose", "which", "whom"]
 
 
-# Take in a tokenized question and return the question type and body
 def processquestion(qwords):
-    # Find "question word" (what, who, where, etc.)
     questionword = ""
     qidx = -1
 
@@ -56,7 +54,8 @@ def processquestion(qwords):
     # Return question data
     return (type, target)
 
-question = "Where is Canada?"
+
+"""question = "Where is Canada?"
 
 print(question)
 qwords = nltk.word_tokenize(question.replace('?', ''))
@@ -64,3 +63,4 @@ questionPOS = nltk.pos_tag(qwords)
 (type, target) = processquestion(qwords)
 
 print(type)
+"""
